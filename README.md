@@ -20,17 +20,35 @@ And then execute:
 
 * It needs [icon_helper](github.com/thiesp/icon-helper-boostrap3-glyphicon-and-bootstrap4-font-awesome) or you can define your on view helper function `bootstrap_icon(icon)` (in this case icon = "trash") which returns html code for your icon. The icon in question here is 'fa fa-trash' or 'glyphicon-trash', depending on which icon library is used.
 
+#### Javascripts
+
+Add the following require to your `application.js`:
+
+```js
+//= require simple_form_bootstrap_upload_inputs
+```
+#### Stylesheets
+
+Add the following import to your `application.scss`:
+
+```scss
+@import "simple_form_bootstrap_upload_inputs";
+```
+
 ## Usage
 
 Generates the single and multiple upload inputs
 
-Single upload:
+### Single file upload
 
 ```
 <%= f.input :upload, as: :single_upload %>
 ```
 
 where `:upload` is a carrierwave upload attribute.
+
+
+### Multiple file upload
 
 Multiple upload uses nested forms like this, where document is a nested attribute, with file as carrierwave attribute.
 
@@ -64,3 +82,15 @@ for strong parameters allow:
 ```ruby
 documents_attributes: [:id, :file, :file_cache, :_destroy]
 ```
+
+## Generators
+
+You can generate everything you need to customize and even use the upload fields without this gem loaded.
+
+### Inputs
+
+
+
+### Javascripts
+
+### Stylesheets
