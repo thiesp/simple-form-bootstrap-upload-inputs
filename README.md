@@ -5,7 +5,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'simple_form_bootstrap_upload_inputs', github: 'thiesp/simple_form_bootstrap_upload_inputs'
+gem 'simple_form_bootstrap_upload_inputs', github: 'thiesp/simple-form-bootstrap-upload-inputs'
 ```
 
 And then execute:
