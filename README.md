@@ -87,10 +87,20 @@ documents_attributes: [:id, :file, :file_cache, :_destroy]
 
 You can generate everything you need to customize and even use the upload fields without this gem loaded.
 
-### Inputs
+### Generate inputs
 
+If you want to customize the inputs.
 
+    $ rails g simple_form_bootstrap_upload_inputs:inputs
 
-### Javascripts
+### Generate stylesheets
 
-### Stylesheets
+If you want to customize the stylesheets.
+
+    $ rails g simple_form_bootstrap_upload_inputs:stylesheets
+
+### Generate javascripts
+
+If you want to customize the javascripts.
+
+    $ rails g simple_form_bootstrap_upload_inputs:javascripts
