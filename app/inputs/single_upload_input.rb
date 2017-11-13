@@ -25,7 +25,7 @@ class SingleUploadInput < SimpleForm::Inputs::Base
 
   def btn_primary
     template.content_tag(:label, class: 'btn btn-primary') do
-      template.concat I18n.t('single_upload.upload_file')
+      template.concat I18n.t('simple_form_bootstrap_upload_inputs.upload_file')
       template.concat @builder.file_field attribute_symbol, onchange: "assign_filename(this)"
       template.concat @builder.hidden_field attribute_cache_symbol, value: object.read_attribute(attribute_cache_symbol)
     end
