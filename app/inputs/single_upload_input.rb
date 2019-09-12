@@ -1,5 +1,4 @@
 class SingleUploadInput < SimpleForm::Inputs::Base
-
   def input(wrapper_options)
     input_group
   end
@@ -48,6 +47,6 @@ class SingleUploadInput < SimpleForm::Inputs::Base
   end
 
   def filename
-    (object.send(attribute_cache_symbol) && object.send(attribute_cache_symbol).filename) || object.send(attribute_identifier_symbol)
+    object.send(attribute_symbol)&.filename if object.send(attribute_symbol).attached?
   end
 end
